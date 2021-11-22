@@ -39,3 +39,33 @@ UIAlertController의 형태는 크게 2가지 형태
    - 버튼이 2개 일 때 버튼이 세로로 배치
    - 메시지가 떠 있는 동안에도 메시지 창이 아닌 다른 영역을 건드릴 수 있으며 , 그 결과로 액션 시트 창이 닫힌다.
 
+
+
+### 6.2 로컬 알림
+
+**로컬 알림** : 앱 내부에서 만든 특정 메시지를 iOS알림 센터를 통해 전달하는 방법, 앱이 종료되어 있거나 백그라운드 상태일 때 메시지를 전달할 수 있는 대표적인 방법 중 하나.
+
+**UserNotification** : 로컬 알림을 처리하는 객체는 전통적으로 UILocalNotification이었으나 UIKit 프레임워크에 정의된 객체였다. 애플이 사용자 알림에 관한 모든 것을 전담 처리할 UserNotification 프레임워크를 iOS 10부터 공개 되었다. 
+이 UserNotification은 사용자 알림을 처리하기 위해 iOS 10부터 새롭게 도입된 알림 전용 프레임 워크로, User와 Notification의 첫 철자를 딴 UN 접두어를 사용해 객체 이름을 정의한다. 기존의 알림 관련 객체에서는 로컬 알림과 서버 알림을 위한 객체가 각각 나누어져 있었지만, UserNotification 프레임워크에서 로컬 알림과 서버 알림의 차이는 단순히 구분값에 지나지 않으므로, 통합적으로 구현 가능하다는 장점이 있다. 
+
+
+
+UserNotification 프레임워크에서 눈여겨봐야 할 객체
+
+UILocalNotification 객체를 통해 정의했던 각종 속성들은 알림 콘텐츠, 알림 발송 조건, 알림 요청의 3가지로 분화 되었다. 이 객체는 아래의 1~3에 해당한다.
+
+1. UNMutableNotificationContent
+   - 알림에 필요한 메시지와 같은 기본적인 속성을 담는 알림 콘텐츠 역할
+   - 이 객체를 통해 로컬 알림 타이틀, 서브 타이틀 및 알림 메시지를 설정할 수 있으며 앱 아이콘에 표시될 배지나 사운드 설정도 모두 이 객체를 통해 설정한다.
+   - 비슷한 객체로 **UNNotificationContent**가 있는데 이 객체는 수정이 불가능하며 객체로부터 속성을 읽어들일 수만 있는 특성을 가진다. 따라서 기존에 등록된 알림 콘텐츠를 읽을 때에만 사용할 수 있으며 속성을 반드시 설정하려면 반드시 UNMutableNotificationContent객체를 사용해야 한다.
+2. UNTimeIntervalNotificationTrigger
+   - 알림 발송 조건을 관리, 설정할 수 있는 속성은 발생 시각과 반복 여부이다.
+   - "몇 분 후"등과 같이 시간 간격을 설정하여 알림 메시지를 발송할 수 있다.
+   - 입력값의 단위는 초(s)이다.
+   - 만약 하루 중 특정 시각에 맞추어 알림 메시지를 전송하고 싶다면 **UNCalendarNotificationTrigger**객체를 사용하면 된다.
+3. UNNotificationRequest
+   - **UNMutableNotificationContent**, **UNTimeIntervalNotificationTrigger**를 통해 알림 발생 조건이 준비되면 이들을 모아 알림 요청 객체를 만들어야 한다. 이 때 사용하는 컨텐츠가 바로 **UNNotificationRequest**이다.
+   - 알림 콘텐츠 객체와 알림 발송 조건 객체를 인자값으로 하여 이 클래스를 초기화하면 그 결과로 알림 요청 객체가 생성되었다.
+4. UNUserNotificationCenter
+   - 실제 발송을 담당하는 센터, 등록된 알림 내용을 확인하고 정해진 시각에 발송하는 역할
+   - 싱글턴 방식으로 동작하기 때문에 따로 인스턴스를 생성하지 않고 current() 메소드를 통해 참조 정보만 가져올 수 있다.
