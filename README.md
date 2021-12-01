@@ -13,8 +13,7 @@ Chapter04
 Chapter05
 
 Chapter06
-<<<<<<< HEAD
 
 Chapter07
-=======
->>>>>>> basic-chapter6
+
+Chapter08
