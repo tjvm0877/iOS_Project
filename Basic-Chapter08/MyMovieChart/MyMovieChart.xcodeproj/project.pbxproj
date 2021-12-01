@@ -14,6 +14,7 @@
 		D24B8CB32754DAB000453AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24B8CB12754DAB000453AA5 /* LaunchScreen.storyboard */; };
 		D24B8CBB2754DB8100453AA5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B8CBA2754DB8100453AA5 /* ListViewController.swift */; };
 		D24B8CBD2754DD7000453AA5 /* MovieVo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B8CBC2754DD7000453AA5 /* MovieVo.swift */; };
+		D28597152757425100B1ED1F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28597142757425100B1ED1F /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D24B8CB42754DAB000453AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D24B8CBA2754DB8100453AA5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D24B8CBC2754DD7000453AA5 /* MovieVo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVo.swift; sourceTree = "<group>"; };
+		D28597142757425100B1ED1F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D24B8CA82754DAAE00453AA5 /* SceneDelegate.swift */,
 				D24B8CAC2754DAAE00453AA5 /* Main.storyboard */,
 				D24B8CBA2754DB8100453AA5 /* ListViewController.swift */,
+				D28597142757425100B1ED1F /* MovieCell.swift */,
 				D24B8CBC2754DD7000453AA5 /* MovieVo.swift */,
 				D24B8CAF2754DAB000453AA5 /* Assets.xcassets */,
 				D24B8CB12754DAB000453AA5 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				D24B8CA72754DAAE00453AA5 /* AppDelegate.swift in Sources */,
 				D24B8CBD2754DD7000453AA5 /* MovieVo.swift in Sources */,
 				D24B8CBB2754DB8100453AA5 /* ListViewController.swift in Sources */,
+				D28597152757425100B1ED1F /* MovieCell.swift in Sources */,
 				D24B8CA92754DAAE00453AA5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
