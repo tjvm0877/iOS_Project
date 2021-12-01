@@ -14,3 +14,74 @@
 테이블 뷰 컨트롤러는 뷰 컨트롤러를 바탕으로 만들어진 특수한 컨트롤러이다. 
 이 테이블 뷰는 목록 형식의 데이터를 화면에 표현하는 데에 사용된다. 
 
+### 테이블 뷰와 데이터 소스 연동
+
+데이터 소스와 테이블 뷰를 연동하는 과정은 UITableViewDataSource라는 프로토콜에 의존하여 이루어진다. 테이블 뷰 컨트롤러는 이 프로토콜을 참고하여 지정한 메소드를 호출함으로써 데이터 소스와 테이블 뷰를 연동한다. 
+
+원래 대로라면 이 프로토콜을 상속받아야 하지만 이미 UITableViewController 클래스가 이미 해당 프로토콜을 상속받고 있으므로 다시금 상속받을 필요가 없다.
+
+
+
+테이블 뷰에 데이터 소스를 연동할 때 필요한 내용
+
+1. 테이블이 몇 개의 행으로 구성되는가?
+2. 각 행의 내용은 어떻게 구성되는가?
+
+이는 두 가지 질문에 답하기 위한 메소드들이 UITableViewDataSource 프로토콜에 정의되어있다.
+
+
+
+### 데이터 소스 연동을 위한 핵심 메소드
+
+**tableView(_: numberOfRowInSection:)**
+
+1. 테이블 뷰가 생성해야 할 행(row)의 개수를 반환한다.
+2. iOS시스템에서 테이블 뷰를 구성하기 위해 먼저 호출하는 메소드이다. 
+3. 이미 만들어진 테이블 뷰츼 행 개수를 결과값으로 반환하는 용도가 아닌 이 메소드에 의해 테이블 뷰의 행 수가 결정된다.
+4. 호출될 때 2개의 인자값이 함께 전달 된다.
+	- 테이블 뷰 객체 정보
+	- 섹션 정보
+
+```swift
+/* 메소드 실제 사용 형식*/
+override func tableView(_ tableView: UITableView, numberOfRowInSection section: Int) -> Int {
+  return 테이블 뷰의 목록 길이
+}
+```
+
+
+
+**tableView(_:cellForRowAt:)**
+
+1. 각 행이 화면에 표현해야 할 내용을 구성하는데 사용된다.
+2. 반환하는 값은 테이블 뷰의 목록이 아니라 하나하나의 개별적인 테이블 셀 객체이다.
+3. 호출될 때 2개의 인자값이 함께 전달 된다.
+   - 구성할 테이블 뷰 객체에 대한 참조
+   - 구성할 행에 대한 참조 정보
+
+```swift
+/* 메소드 실제 사용 형식*/
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell {
+  return 테이블 뷰 셀 인스턴스
+}
+```
+
+
+
+### 사용자의 액션 처리를 위한 핵심 메소드
+
+**tableView(_:didSelectRowAt:)**
+
+1. 사용자의 목록 중에서 특정 행을 선택 했을 때 호출된다.
+2. 델리게이트 메소드이기 때문에 적절한 시점에 맞추어 자동으로 호출된다.
+3. 호출될 때 2개의 인자값이 함께 전달 된다.
+   - 사용자가 터치한 테이블 뷰에 대한 참조값
+   - 인자값이 터치된 행에 대한 정보
+
+```swift
+/* 메소드 실제 사용 형식*/
+override func tableView(_ tableView: UITableView, didselectRowAt indexPath: IndexPath) {
+  
+}
+```
+
