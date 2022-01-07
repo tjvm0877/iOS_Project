@@ -11,16 +11,6 @@ class ListViewVC: UITableViewController {
 
     lazy var list : [MovieVo] = {
         var datalist = [MovieVo]()
-//        for (title, desc, opendate, rating, thumnail) in self.dataset {
-//            let mvo = MovieVo()
-//            mvo.title = title
-//            mvo.description = desc
-//            mvo.opendate = opendate
-//            mvo.rating = rating
-//            mvo.thumnail = thumnail
-//
-//            datalist.append(mvo)
-//        }
         return datalist
     }()
     
