@@ -57,14 +57,25 @@ class ListViewVC: UITableViewController {
         cell.opendate?.text = row.opendate
         cell.rating?.text = "\(row.rating!)"
         
-        let url: URL! = URL(string: row.thumnail!)
-        
-        let imageData = try! Data(contentsOf: url)
-        
-        cell.img.image = UIImage(data: imageData)
-//        cell.img.image = UIImage(named: row.thumnail!)
+        DispatchQueue.main.async(execute: {
+            cell.img.image = self.getThumbnailImage(indexPath.row)
+        })
         
         return cell
+    }
+    
+    func getThumbnailImage( _ index: Int) -> UIImage {
+        let mvo = self.list[index]
+        
+        if let savedImage = mvo.thumbnailImage {
+            return savedImage
+        } else {
+            let url: URL! = URL(string: mvo.thumnail!)
+            let imageData = try! Data(contentsOf: url)
+            mvo.thumbnailImage = UIImage(data: imageData)
+            
+            return mvo.thumbnailImage!
+        }
     }
     
     func callMovieApi() {
@@ -94,6 +105,10 @@ class ListViewVC: UITableViewController {
                 mvo.thumnail = r["thumbnailImage"] as? String
                 mvo.detail = r["linkUrl"] as? String
                 mvo.rating = ((r["ratingAverage"] as! NSString).doubleValue)
+                
+                let url: URL! = URL(string: mvo.thumnail!)
+                let imageData = try! Data(contentsOf: url)
+                mvo.thumbnailImage = UIImage(data: imageData)
                 
                 self.list.append(mvo)
             }
