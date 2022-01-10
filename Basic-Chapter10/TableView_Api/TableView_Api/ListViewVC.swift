@@ -18,7 +18,7 @@ class ListViewVC: UITableViewController {
         var datalist = [MovieVo]()
 //        for (title, desc, opendate, rating, thumnail) in self.dataset {
 //            let mvo = MovieVo()
-//            mvo.title = title
+//           mvo.title = title
 //            mvo.description = desc
 //            mvo.opendate = opendate
 //            mvo.rating = rating
