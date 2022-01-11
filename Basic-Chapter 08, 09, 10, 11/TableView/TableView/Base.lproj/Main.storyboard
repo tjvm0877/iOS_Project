@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Je2-of-Cqd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -20,6 +20,9 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="더보기"/>
+                            <connections>
+                                <action selector="more:" destination="J5q-Xe-cr2" eventType="touchUpInside" id="GtG-gm-HT5"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="8Pa-nF-4mI" customClass="movieCell" customModule="TableView" customModuleProvider="target">
@@ -82,6 +85,13 @@
                                         <constraint firstItem="9Z9-1N-nEA" firstAttribute="leading" secondItem="C2j-uE-PuY" secondAttribute="trailing" constant="8" symbolic="YES" id="wXp-eb-HL5"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="desc" destination="fh6-MQ-zaS" id="rGY-Yx-Txa"/>
+                                    <outlet property="openDate" destination="gXQ-fy-VtS" id="ALj-ce-4yB"/>
+                                    <outlet property="rating" destination="2Bo-ip-M5f" id="5A2-UZ-LbP"/>
+                                    <outlet property="thumbnail" destination="C2j-uE-PuY" id="SfR-ZL-Cv8"/>
+                                    <outlet property="title" destination="9Z9-1N-nEA" id="gzK-ba-I5j"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -90,6 +100,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="qJT-QN-pRi"/>
+                    <connections>
+                        <outlet property="moreBtn" destination="WT3-wm-G9j" id="6Cw-12-01P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hky-Mu-Mya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

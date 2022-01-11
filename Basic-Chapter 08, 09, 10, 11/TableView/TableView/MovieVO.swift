@@ -14,7 +14,7 @@ class MovieVO {
     var description : String?
     var detail : String?
     var openDate : String?
-    var rating : String?
+    var rating : Double?
     
     var thumbnailImage: UIImage?
 }
