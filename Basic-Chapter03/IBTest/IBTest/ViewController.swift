@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     @IBOutlet var uiTitle01: UILabel!
     @IBOutlet var uiTitle02: UILabel!
