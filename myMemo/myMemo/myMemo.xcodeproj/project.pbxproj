@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2D6346F278C09AE0045F6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D6346E278C09AE0045F6B5 /* AppDelegate.swift */; };
-		D2D63471278C09AE0045F6B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63470278C09AE0045F6B5 /* SceneDelegate.swift */; };
-		D2D63476278C09AE0045F6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D63474278C09AE0045F6B5 /* Main.storyboard */; };
-		D2D63478278C09AF0045F6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D63477278C09AF0045F6B5 /* Assets.xcassets */; };
-		D2D6347B278C09AF0045F6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D63479278C09AF0045F6B5 /* LaunchScreen.storyboard */; };
-		D2D63483278C09FD0045F6B5 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63482278C09FD0045F6B5 /* MovieVO.swift */; };
-		D2D63485278C0C360045F6B5 /* ListViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63484278C0C360045F6B5 /* ListViewVC.swift */; };
-		D2D63487278C0C3F0045F6B5 /* MovieCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63486278C0C3F0045F6B5 /* MovieCellVC.swift */; };
+		D26066FC278FF73B003ED13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26066FB278FF73B003ED13D /* AppDelegate.swift */; };
+		D26066FE278FF73B003ED13D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26066FD278FF73B003ED13D /* SceneDelegate.swift */; };
+		D2606703278FF73B003ED13D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2606701278FF73B003ED13D /* Main.storyboard */; };
+		D2606706278FF73B003ED13D /* myMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2606704278FF73B003ED13D /* myMemo.xcdatamodeld */; };
+		D2606708278FF73C003ED13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2606707278FF73C003ED13D /* Assets.xcassets */; };
+		D260670B278FF73C003ED13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2606709278FF73C003ED13D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D2D6346B278C09AE0045F6B5 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2D6346E278C09AE0045F6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2D63470278C09AE0045F6B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2D63475278C09AE0045F6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2D63477278C09AF0045F6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2D6347A278C09AF0045F6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D2D6347C278C09AF0045F6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2D63482278C09FD0045F6B5 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
-		D2D63484278C0C360045F6B5 /* ListViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewVC.swift; sourceTree = "<group>"; };
-		D2D63486278C0C3F0045F6B5 /* MovieCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellVC.swift; sourceTree = "<group>"; };
+		D26066F8278FF73B003ED13D /* myMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26066FB278FF73B003ED13D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D26066FD278FF73B003ED13D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2606702278FF73B003ED13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2606705278FF73B003ED13D /* myMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myMemo.xcdatamodel; sourceTree = "<group>"; };
+		D2606707278FF73C003ED13D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D260670A278FF73C003ED13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D260670C278FF73C003ED13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D2D63468278C09AE0045F6B5 /* Frameworks */ = {
+		D26066F5278FF73B003ED13D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,74 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D2D63462278C09AE0045F6B5 = {
+		D26066EF278FF73B003ED13D = {
 			isa = PBXGroup;
 			children = (
-				D2D6346D278C09AE0045F6B5 /* TableView */,
-				D2D6346C278C09AE0045F6B5 /* Products */,
+				D26066FA278FF73B003ED13D /* myMemo */,
+				D26066F9278FF73B003ED13D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D2D6346C278C09AE0045F6B5 /* Products */ = {
+		D26066F9278FF73B003ED13D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2D6346B278C09AE0045F6B5 /* TableView.app */,
+				D26066F8278FF73B003ED13D /* myMemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2D6346D278C09AE0045F6B5 /* TableView */ = {
+		D26066FA278FF73B003ED13D /* myMemo */ = {
 			isa = PBXGroup;
 			children = (
-				D2D6346E278C09AE0045F6B5 /* AppDelegate.swift */,
-				D2D63470278C09AE0045F6B5 /* SceneDelegate.swift */,
-				D2D63482278C09FD0045F6B5 /* MovieVO.swift */,
-				D2D63474278C09AE0045F6B5 /* Main.storyboard */,
-				D2D63484278C0C360045F6B5 /* ListViewVC.swift */,
-				D2D63486278C0C3F0045F6B5 /* MovieCellVC.swift */,
-				D2D63477278C09AF0045F6B5 /* Assets.xcassets */,
-				D2D63479278C09AF0045F6B5 /* LaunchScreen.storyboard */,
-				D2D6347C278C09AF0045F6B5 /* Info.plist */,
+				D26066FB278FF73B003ED13D /* AppDelegate.swift */,
+				D26066FD278FF73B003ED13D /* SceneDelegate.swift */,
+				D2606701278FF73B003ED13D /* Main.storyboard */,
+				D2606707278FF73C003ED13D /* Assets.xcassets */,
+				D2606709278FF73C003ED13D /* LaunchScreen.storyboard */,
+				D260670C278FF73C003ED13D /* Info.plist */,
+				D2606704278FF73B003ED13D /* myMemo.xcdatamodeld */,
 			);
-			path = TableView;
+			path = myMemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2D6346A278C09AE0045F6B5 /* TableView */ = {
+		D26066F7278FF73B003ED13D /* myMemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2D6347F278C09AF0045F6B5 /* Build configuration list for PBXNativeTarget "TableView" */;
+			buildConfigurationList = D260670F278FF73C003ED13D /* Build configuration list for PBXNativeTarget "myMemo" */;
 			buildPhases = (
-				D2D63467278C09AE0045F6B5 /* Sources */,
-				D2D63468278C09AE0045F6B5 /* Frameworks */,
-				D2D63469278C09AE0045F6B5 /* Resources */,
+				D26066F4278FF73B003ED13D /* Sources */,
+				D26066F5278FF73B003ED13D /* Frameworks */,
+				D26066F6278FF73B003ED13D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TableView;
-			productName = TableView;
-			productReference = D2D6346B278C09AE0045F6B5 /* TableView.app */;
+			name = myMemo;
+			productName = myMemo;
+			productReference = D26066F8278FF73B003ED13D /* myMemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D2D63463278C09AE0045F6B5 /* Project object */ = {
+		D26066F0278FF73B003ED13D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					D2D6346A278C09AE0045F6B5 = {
+					D26066F7278FF73B003ED13D = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D2D63466278C09AE0045F6B5 /* Build configuration list for PBXProject "TableView" */;
+			buildConfigurationList = D26066F3278FF73B003ED13D /* Build configuration list for PBXProject "myMemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,57 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = D2D63462278C09AE0045F6B5;
-			productRefGroup = D2D6346C278C09AE0045F6B5 /* Products */;
+			mainGroup = D26066EF278FF73B003ED13D;
+			productRefGroup = D26066F9278FF73B003ED13D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2D6346A278C09AE0045F6B5 /* TableView */,
+				D26066F7278FF73B003ED13D /* myMemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D2D63469278C09AE0045F6B5 /* Resources */ = {
+		D26066F6278FF73B003ED13D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D6347B278C09AF0045F6B5 /* LaunchScreen.storyboard in Resources */,
-				D2D63478278C09AF0045F6B5 /* Assets.xcassets in Resources */,
-				D2D63476278C09AE0045F6B5 /* Main.storyboard in Resources */,
+				D260670B278FF73C003ED13D /* LaunchScreen.storyboard in Resources */,
+				D2606708278FF73C003ED13D /* Assets.xcassets in Resources */,
+				D2606703278FF73B003ED13D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D2D63467278C09AE0045F6B5 /* Sources */ = {
+		D26066F4278FF73B003ED13D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D63487278C0C3F0045F6B5 /* MovieCellVC.swift in Sources */,
-				D2D63483278C09FD0045F6B5 /* MovieVO.swift in Sources */,
-				D2D6346F278C09AE0045F6B5 /* AppDelegate.swift in Sources */,
-				D2D63471278C09AE0045F6B5 /* SceneDelegate.swift in Sources */,
-				D2D63485278C0C360045F6B5 /* ListViewVC.swift in Sources */,
+				D26066FC278FF73B003ED13D /* AppDelegate.swift in Sources */,
+				D26066FE278FF73B003ED13D /* SceneDelegate.swift in Sources */,
+				D2606706278FF73B003ED13D /* myMemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2D63474278C09AE0045F6B5 /* Main.storyboard */ = {
+		D2606701278FF73B003ED13D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2D63475278C09AE0045F6B5 /* Base */,
+				D2606702278FF73B003ED13D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D2D63479278C09AF0045F6B5 /* LaunchScreen.storyboard */ = {
+		D2606709278FF73C003ED13D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2D6347A278C09AF0045F6B5 /* Base */,
+				D260670A278FF73C003ED13D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D2D6347D278C09AF0045F6B5 /* Debug */ = {
+		D260670D278FF73C003ED13D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		D2D6347E278C09AF0045F6B5 /* Release */ = {
+		D260670E278FF73C003ED13D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,7 +282,7 @@
 			};
 			name = Release;
 		};
-		D2D63480278C09AF0045F6B5 /* Debug */ = {
+		D2606710278FF73C003ED13D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -299,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KLKPT7BZGN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = myMemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hyun.TableView;
+				PRODUCT_BUNDLE_IDENTIFIER = Hyun.myMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		D2D63481278C09AF0045F6B5 /* Release */ = {
+		D2606711278FF73C003ED13D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -327,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KLKPT7BZGN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = myMemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hyun.TableView;
+				PRODUCT_BUNDLE_IDENTIFIER = Hyun.myMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,25 +341,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2D63466278C09AE0045F6B5 /* Build configuration list for PBXProject "TableView" */ = {
+		D26066F3278FF73B003ED13D /* Build configuration list for PBXProject "myMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2D6347D278C09AF0045F6B5 /* Debug */,
-				D2D6347E278C09AF0045F6B5 /* Release */,
+				D260670D278FF73C003ED13D /* Debug */,
+				D260670E278FF73C003ED13D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2D6347F278C09AF0045F6B5 /* Build configuration list for PBXNativeTarget "TableView" */ = {
+		D260670F278FF73C003ED13D /* Build configuration list for PBXNativeTarget "myMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2D63480278C09AF0045F6B5 /* Debug */,
-				D2D63481278C09AF0045F6B5 /* Release */,
+				D2606710278FF73C003ED13D /* Debug */,
+				D2606711278FF73C003ED13D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2606704278FF73B003ED13D /* myMemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2606705278FF73B003ED13D /* myMemo.xcdatamodel */,
+			);
+			currentVersion = D2606705278FF73B003ED13D /* myMemo.xcdatamodel */;
+			path = myMemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = D2D63463278C09AE0045F6B5 /* Project object */;
+	rootObject = D26066F0278FF73B003ED13D /* Project object */;
 }
