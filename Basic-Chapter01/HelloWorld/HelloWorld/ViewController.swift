@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     적절한 시점에서 시스템에 의해 자동으로 호출되는 콜백 메소드(CallBack Method) */
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
