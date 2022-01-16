@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22113882793BC6800996253 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22113872793BC6800996253 /* MemoReadVC.swift */; };
 		D26066FC278FF73B003ED13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26066FB278FF73B003ED13D /* AppDelegate.swift */; };
 		D26066FE278FF73B003ED13D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26066FD278FF73B003ED13D /* SceneDelegate.swift */; };
 		D2606703278FF73B003ED13D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2606701278FF73B003ED13D /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D22113872793BC6800996253 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		D26066F8278FF73B003ED13D /* myMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26066FB278FF73B003ED13D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D26066FD278FF73B003ED13D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				D26066FB278FF73B003ED13D /* AppDelegate.swift */,
 				D26066FD278FF73B003ED13D /* SceneDelegate.swift */,
 				D2606701278FF73B003ED13D /* Main.storyboard */,
+				D22113872793BC6800996253 /* MemoReadVC.swift */,
 				D260671827902091003ED13D /* MemoData.swift */,
 				D260671427901FEE003ED13D /* MemoListVC.swift */,
 				D260671C279023C0003ED13D /* MemoFormVC.swift */,
@@ -156,6 +159,7 @@
 				D26066FE278FF73B003ED13D /* SceneDelegate.swift in Sources */,
 				D260671927902091003ED13D /* MemoData.swift in Sources */,
 				D260671527901FEE003ED13D /* MemoListVC.swift in Sources */,
+				D22113882793BC6800996253 /* MemoReadVC.swift in Sources */,
 				D2606706278FF73B003ED13D /* myMemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

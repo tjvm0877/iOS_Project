@@ -162,7 +162,7 @@
         <!--상세 화면-->
         <scene sceneID="FmI-26-Vnd">
             <objects>
-                <viewController title="상세 화면" id="UUj-Ej-Gju" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" title="상세 화면" id="UUj-Ej-Gju" customClass="MemoReadVC" customModule="myMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qew-OS-T3b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
