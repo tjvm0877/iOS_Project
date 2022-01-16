@@ -52,4 +52,18 @@ class MemoListVC: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // memolist 배열에서 선택한 행에 맞는 데이터를 꺼낸다.
+        let row = self.appDelegate.memolist[indexPath.row]
+        
+        // 상세 화면의 인스턴스를 생성
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MemoRead") as? MemoReadVC else{
+            return
+        }
+        
+        // 값 전달 및 상새화면으로 이동
+        vc.param = row
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
