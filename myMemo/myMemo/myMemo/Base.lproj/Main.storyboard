@@ -204,6 +204,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ad9-11-gHH"/>
+                    <connections>
+                        <outlet property="contents" destination="Xpg-58-bsJ" id="pQP-7z-3Un"/>
+                        <outlet property="img" destination="EDh-Ey-fA6" id="TQO-7k-cF9"/>
+                        <outlet property="subject" destination="GMS-CD-tb1" id="gom-qh-1c8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Az0-Ts-taE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
