@@ -8,7 +8,7 @@
 import UIKit
 
 class MemoReadVC: UIViewController {
-    // 콘텐츠 데이터를 저장하는 변수
+    // 리스트에서 콘텐츠 데이터를 받고 저장하는 변수
     var param: MemoData?
     
     @IBOutlet weak var subject: UILabel!
